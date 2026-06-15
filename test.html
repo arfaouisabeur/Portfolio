@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Modal</title>
+    <script>
+        window.onload = function() {
+            console.log('Testing project modal...');
+            
+            // Check if all required elements exist
+            const projectsContainer = document.getElementById('projects-container');
+            const modalOverlay = document.getElementById('project-modal-overlay');
+            const modalContent = document.getElementById('modal-content');
+            
+            console.log('Projects Container:', projectsContainer ? 'FOUND' : 'MISSING');
+            console.log('Modal Overlay:', modalOverlay ? 'FOUND' : 'MISSING');
+            console.log('Modal Content:', modalContent ? 'FOUND' : 'MISSING');
+            
+            // Check for project cards
+            setTimeout(() => {
+                const cards = document.querySelectorAll('.project-card');
+                const buttons = document.querySelectorAll('.view-project-btn');
+                console.log('Project Cards:', cards.length);
+                console.log('View Buttons:', buttons.length);
+                
+                if (buttons.length > 0) {
+                    console.log('✓ View Details buttons are present!');
+                    console.log('Click any "View Details" button to test the modal.');
+                } else {
+                    console.log('✗ No View Details buttons found!');
+                }
+            }, 500);
+        };
+    </script>
+</head>
+<body>
+    <h1>Open the browser console (F12) to see test results</h1>
+    <p>Then go back to <a href="Index.html">Index.html</a> to test the portfolio</p>
+</body>
+</html>
