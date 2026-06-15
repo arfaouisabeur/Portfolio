@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabeur Arfaoui portfolio</title>
+    <meta name="description" content="Portfolio of Sabeur Arfaoui, a passionate computer science student exploring AI, web development, and cybersecurity.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons for modern SVG icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Theme Switcher -->
+    <button class="theme-toggle interactable" id="theme-toggle" aria-label="Toggle Theme">
+        <i class="ph ph-sun" id="theme-icon"></i>
+    </button>
+
+    <!-- Sticky Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo interactable">Sabeur<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="interactable">About</a></li>
+                <li><a href="#skills" class="interactable">Skills</a></li>
+                <li><a href="#experience" class="interactable">Experience</a></li>
+                <li><a href="#projects" class="interactable">Projects</a></li>
+                <li><a href="#contact" class="interactable">Contact</a></li>
+            </ul>
+            
+            <div class="mobile-menu-btn interactable" id="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="close-menu interactable" id="close-menu"><i class="ph ph-x"></i></button>
+        <ul>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#experience" class="mobile-link">Experience</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="section hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-in">Student & Developer</div>
+                <h1 class="animate-slide-up">Hi, I'm <span class="gradient-text">Sabeur Arfaoui</span></h1>
+                <p class="hero-subtitle animate-slide-up animation-delay-1">
+                    Computer Science Engineering Student & Full Stack Developer.<br>
+                    Exploring AI, Cybersecurity, and building modern web experiences.
+                </p>
+                <div class="hero-actions animate-fade-in animation-delay-2">
+                    <a href="#projects" class="btn btn-primary interactable">View Projects <i class="ph ph-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary interactable">Contact Me</a>
+                </div>
+                
+                <div class="hero-stats animate-fade-in animation-delay-3">
+                    <div class="stat-item">
+                        <h3><span class="counter" data-target="4">4</span></h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>+<span class="counter" data-target="20">20</span></h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3><span class="counter" data-target="99.9">99.9</span></h3>
+                        <p>% Passion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper animate-slide-up animation-delay-2">
+                <div class="hero-image-container">
+                    <img src="./me.jpg" alt="Sabeur Arfaoui" class="hero-img interactable">
+                    <div class="hero-img-glow"></div>
+                    <div class="floating-badge badge-1"><i class="ph ph-code"></i> Developer</div>
+                    <div class="floating-badge badge-2"><i class="ph ph-brain"></i> AI Enthusiast</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-background">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container reveal">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text glass-card" style="grid-column: span 2;">
+                    <p>I’m Sabeur Arfaoui, a curious computer science engineering student with 3+ years of experience in tech.</p>
+                    <p>While I started in web development, I’m now exploring AI, cybersecurity, and anything that challenges me to learn, build, and grow.</p>
+                    
+                    <div class="education-timeline mt-4">
+                        <h3>Education</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Engineering Degree in Computer Science</h4>
+                            <span class="timeline-date">2025 - 2028</span>
+                            <p>ESPRIT (École supérieure privée d'ingénierie et de technologie)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Bachelor’s degree in Computer Science</h4>
+                            <span class="timeline-date">2022 - 2025</span>
+                            <p>Higher Institute of Multimedia Arts of Manouba</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container reveal">
+            <div class="section-header">
+                <h2>Skills</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category glass-card interactable-card">
+                    <div class="category-icon"><i class="ph ph-code"></i></div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag interactable" data-tooltip="Structure">HTML</span>
+                        <span class="skill-tag interactable" data-tooltip="Styling">CSS</span>
+                        <span class="skill-tag interactable" data-tooltip="Logic">JavaScript</span>
+                        <span class="skill-tag interactable" data-tooltip="Backend">Java</span>
+                        <span class="skill-tag interactable" data-tooltip="Data & AI">Python</span>
+                        <span class="skill-tag interactable" data-tooltip="Pre-processor">SASS</span>
+                        <span class="skill-tag interactable" data-tooltip="Automation">Apps Script</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category glass-card interactable-card">
+                    <div class="category-icon"><i class="ph ph-brackets-curly"></i></div>
+                    <h3>Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag interactable" data-tooltip="UI Library">React.js</span>
+                        <span class="skill-tag interactable" data-tooltip="React Framework">Next.js</span>
+                        <span class="skill-tag interactable" data-tooltip="Web Framework">Angular</span>
+                        <span class="skill-tag interactable" data-tooltip="Node.js Framework">ExpressJS</span>
+                        <span class="skill-tag interactable" data-tooltip="Python Web">Flask</span>
+                        <span class="skill-tag interactable" data-tooltip="Java Backend">Spring Boot</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-category glass-card interactable-card">
+                    <div class="category-icon"><i class="ph ph-wrench"></i></div>
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag interactable" data-tooltip="Version Control">Git</span>
+                        <span class="skill-tag interactable" data-tooltip="API Testing">Postman</span>
+                        <span class="skill-tag interactable" data-tooltip="OS">Linux</span>
+                        <span class="skill-tag interactable" data-tooltip="Design">Figma</span>
+                        <span class="skill-tag interactable" data-tooltip="Management">Trello</span>
+                    </div>
+                </div>
+
+                <!-- Domains -->
+                <div class="skill-category glass-card interactable-card">
+                    <div class="category-icon"><i class="ph ph-globe"></i></div>
+                    <h3>Domains</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag interactable">Front-end</span>
+                        <span class="skill-tag interactable">Back-end</span>
+                        <span class="skill-tag interactable">API</span>
+                        <span class="skill-tag interactable">UI/UX</span>
+                        <span class="skill-tag interactable">AI API Integration</span>
+                        <span class="skill-tag interactable">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container reveal">
+            <div class="section-header">
+                <h2>Experience</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="experience-grid">
+                <!-- Professional Experience -->
+                <div class="exp-column">
+                    <h3 class="exp-category-title">Professional Experience</h3>
+                    <div class="experience-timeline">
+                        <div class="exp-item glass-card interactable-card">
+                            <div class="exp-date">2024</div>
+                            <div class="exp-content">
+                                <h3>Full-Stack Internship</h3>
+                                <h4>Seekmake</h4>
+                                <p>Built a freelance marketplace using Angular, Spring Boot, Flask, and MySQL. Integrated KittyCAD API for AI-based 3D model generation.</p>
+                            </div>
+                        </div>
+                        <div class="exp-item glass-card interactable-card">
+                            <div class="exp-date">2023</div>
+                            <div class="exp-content">
+                                <h3>Backend Internship</h3>
+                                <h4>Entreprise Createch</h4>
+                                <p>Interned as a backend developer using Node.js. Contributed to robust solutions and gained valuable insights into enterprise-level development.</p>
+                            </div>
+                        </div>
+                        <div class="exp-item glass-card interactable-card">
+                            <div class="exp-date">2023</div>
+                            <div class="exp-content">
+                                <h3>Frontend Internship</h3>
+                                <h4>Flayes</h4>
+                                <p>Learned Next.js and contributed to the development of the website and dashboard. Enhanced my skills in agile development practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Associative Experience -->
+                <div class="exp-column">
+                    <h3 class="exp-category-title">Associative Experience</h3>
+                    <div class="experience-timeline">
+                        <div class="exp-item glass-card interactable-card">
+                            <div class="exp-date">2023 - Present</div>
+                            <div class="exp-content">
+                                <h3>AIESEC Manager / Web Developer</h3>
+                                <h4>AIESEC Mannouba</h4>
+                                <p>Served as web developer. Built tools linking Google Sheets to internal platforms via Apps Script, centralizing data and enabling real-time coordination.</p>
+                            </div>
+                        </div>
+                        <div class="exp-item glass-card interactable-card">
+                            <div class="exp-date">2022</div>
+                            <div class="exp-content">
+                                <h3>Project Manager</h3>
+                                <h4>ISAMM Microsoft Club</h4>
+                                <p>Led project execution, coordinated team efforts, and conducted training sessions to upskill members in tech tools and workflows.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header mt-8">
+                <h2>Achievements</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon"><i class="ph-fill ph-seal-check"></i></div>
+                    <h3>Verified Upwork Freelancer</h3>
+                    <span class="achievement-date">2024</span>
+                    <p>Delivered reliable and high-quality results with satisfied clients on Upwork.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon"><i class="ph-fill ph-trophy"></i></div>
+                    <h3>Winner TuniHack</h3>
+                    <span class="achievement-date">2023</span>
+                    <p>Hackathon at École Nationale des Sciences de l'Informatique focused on marketing innovation.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon"><i class="ph-fill ph-medal"></i></div>
+                    <h3>Winner HackMaken</h3>
+                    <span class="achievement-date">2023</span>
+                    <p>Hackathon organized by Hackathon Tunisie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container reveal">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be injected via JS to handle data efficiently -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container reveal">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info glass-card">
+                    <h3>Let's build something amazing together.</h3>
+                    <p>I'm currently looking for new opportunities and challenges. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:Arfaouisaber140@gmail.com" class="contact-method interactable">
+                            <i class="ph ph-envelope-simple"></i>
+                            <span>Arfaouisaber140@gmail.com</span>
+                        </a>
+                        <div class="contact-method interactable">
+                            <i class="ph ph-phone"></i>
+                            <span>+216 99932244</span>
+                        </div>
+                        <div class="contact-method interactable">
+                            <i class="ph ph-map-pin"></i>
+                            <span>Mannouba, Tunisia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required class="glass-input interactable">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required class="glass-input interactable">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required class="glass-input interactable"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary interactable w-full">
+                        Send Message <i class="ph ph-paper-plane-tilt"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Sabeur<span>.</span></div>
+                <div class="social-links">
+                    <a href="https://github.com/arfaouisabeur" target="_blank" class="interactable"><i class="ph ph-github-logo"></i></a>
+                    <a href="#" class="interactable"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="mailto:Arfaouisaber140@gmail.com" class="interactable"><i class="ph ph-envelope-simple"></i></a>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+
+    <!-- Command Palette Modal -->
+    <div class="cmd-palette-overlay" id="cmd-overlay">
+        <div class="cmd-palette glass-card">
+            <div class="cmd-search">
+                <i class="ph ph-magnifying-glass"></i>
+                <input type="text" id="cmd-input" placeholder="Type a command or search..." autocomplete="off">
+                <span class="cmd-esc">ESC</span>
+            </div>
+            <div class="cmd-results">
+                <div class="cmd-group">
+                    <div class="cmd-group-title">Navigation</div>
+                    <a href="#hero" class="cmd-item">Home</a>
+                    <a href="#about" class="cmd-item">About</a>
+                    <a href="#skills" class="cmd-item">Skills</a>
+                    <a href="#projects" class="cmd-item">Projects</a>
+                    <a href="#contact" class="cmd-item">Contact</a>
+                </div>
+                <div class="cmd-group">
+                    <div class="cmd-group-title">Actions</div>
+                    <div class="cmd-item" id="cmd-theme-toggle">Toggle Theme <span class="cmd-shortcut">T</span></div>
+                    <a href="mailto:Arfaouisaber140@gmail.com" class="cmd-item">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div class="project-modal-overlay" id="project-modal-overlay">
+        <div class="project-modal glass-card">
+            <button class="modal-close interactable" id="modal-close"><i class="ph ph-x"></i></button>
+            <div class="modal-content" id="modal-content">
+                <!-- Modal content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
