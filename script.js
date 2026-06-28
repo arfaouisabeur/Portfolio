@@ -1,8 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --------------------------------------------------------
-    // 1. Projects Data Injection
-    // --------------------------------------------------------
+
     const projectsData = [
+        {
+            title: '🧮 Multi Calculator Platform',
+            description: 'A freelance project developed for StatBid, a Search Marketing Agency based in the United States. The platform provides a collection of specialized calculators designed to help users perform accurate calculations efficiently while improving operational productivity.<br><br>This project demonstrates my ability to deliver client-focused solutions, understand business requirements, and develop practical tools tailored to real-world professional needs.<br><br><strong>Highlights:</strong><br>• Freelance project for a US company<br>• Client-oriented development<br>• Productivity-focused tools<br>• Responsive and intuitive design<br>• Business-driven solution',
+            tech: ['JavaScript', 'HTML5', 'CSS3'],
+            demoLink: 'https://www.statbid.com/tools/',
+            githubLink: '#',
+            image: 'https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        },
         {
             title: '🏗️ NATCO National Conference Website',
             badge: '⭐ Featured Project',
@@ -31,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: '❤️ CASA NGO Platform',
             description: 'A dedicated digital platform developed for an NGO focused on supporting homeless individuals and vulnerable communities. The website aims to increase awareness, promote social impact initiatives, and connect supporters with the organization\'s mission.<br><br>Special attention was given to accessibility, storytelling, and user engagement to effectively communicate the NGO\'s values and humanitarian efforts.<br><br><strong>Highlights:</strong><br>• Social impact focused platform<br>• NGO awareness and outreach<br>• Community engagement experience<br>• Accessible and inclusive design<br>• Mission-driven storytelling',
-            tech: ['HTML', 'CSS', 'JavaScript'],
+            tech: ['REACT', 'EXPRESS', 'JavaScript'],
             demoLink: 'https://arfaouisabeur.github.io/CASA/',
             githubLink: '#',
             image: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -47,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: '🌍 Global Village Platform',
             description: 'An interactive platform developed to showcase cultural diversity and international exchange opportunities through the Global Village initiative. The website highlights different cultures, activities, and participant experiences while encouraging cross-cultural understanding and global citizenship.<br><br>The project reflects my ability to create engaging platforms for international and multicultural audiences.<br><br><strong>Highlights:</strong><br>• International event showcase<br>• Cultural diversity promotion<br>• Interactive user experience<br>• Modern visual storytelling<br>• Community-focused platform',
-            tech: ['HTML', 'SASS', 'JavaScript'],
+            tech: ['VITE', 'SASS', 'JavaScript'],
             demoLink: 'https://arfaouisabeur.github.io/Global-Village/index.html',
             githubLink: '#',
             image: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -59,14 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
             demoLink: 'https://arfaouisabeur.github.io/Medina-Resume-Maker/index.html',
             githubLink: '#',
             image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-        },
-        {
-            title: '🧮 Multi Calculator Platform',
-            description: 'A freelance project developed for StatBid, a Search Marketing Agency based in the United States. The platform provides a collection of specialized calculators designed to help users perform accurate calculations efficiently while improving operational productivity.<br><br>This project demonstrates my ability to deliver client-focused solutions, understand business requirements, and develop practical tools tailored to real-world professional needs.<br><br><strong>Highlights:</strong><br>• Freelance project for a US company<br>• Client-oriented development<br>• Productivity-focused tools<br>• Responsive and intuitive design<br>• Business-driven solution',
-            tech: ['JavaScript', 'HTML5', 'CSS3'],
-            demoLink: 'https://arfaouisabeur.github.io/Calculators-Project/',
-            githubLink: '#',
-            image: 'https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
         }
     ];
 
