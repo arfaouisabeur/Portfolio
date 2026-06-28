@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     projectsData.forEach((proj, index) => {
         const techTags = proj.tech.map(t => `<span>${t}</span>`).join('');
         const badge = proj.badge ? `<span class="project-badge">${proj.badge}</span>` : '';
-        // Create a short description for the card (first 150 characters)
         const shortDesc = proj.description.replace(/<br>/g, ' ').replace(/<[^>]*>/g, '').substring(0, 150) + '...';
         
         const cardHTML = `
